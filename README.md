@@ -29,7 +29,11 @@ _This is a website to check ticket prices based on information entered by the us
 ```
 Describe: ticket{}
 Test: "It should create a 'ticket' object"
-Result: (ticket).toEqual{movie, showtime, age}
+Expect: (ticket).toEqual{movie, showtime, age}
+
+Test: "It should return the ticket price based on the information entered into the the ticket object"
+Code: const movieTicket = {title = 4, showtime = 3, age = 2}
+Expect: (ticketPrice(movieTicket)).toEqual(9)
 ```
 
 ## Known Bugs

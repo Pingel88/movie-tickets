@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <div class="container">
+    <form class="ticket-selection">
+      <label class="my-2 mr-2" for="movie-selection">Choose a movie</label>
+      <select class="custom-select my-1 mr-sm-2" id="movie-selection">
+        <option selected>Choose...</option>
+        <option value="4">Death Becomes Her</option>
+        <option value="3">Tree Stump: The Choppening</option>
+        <option value="2">Troll 2</option>
+        <option value="1">I Am Legend 2</option>
+      </select>
+      <label class="my-2 mr-2" for="showtime-selection">Choose a showtime</label>
+      <select class="custom-select my-1 mr-sm-2" id="showtime-selection">
+        <option selected>Choose...</option>
+        <option value="3">Prime Time</option>
+        <option value="2">Matinee</option>
+        <option value="1">Midnight</option>
+      </select>
+      <label class="my-2 mr-2" for="age-selection">Choose your age</label>
+      <select class="custom-select my-1 mr-sm-2" id="age-selection">
+        <option selected>Choose...</option>
+        <option value="4">Adult (18-64)</option>
+        <option value="3">Teen (13-17)</option>
+        <option value="2">Child (0-12)</option>
+        <option value="1">Senior (65+)</option>
+      </select>
+    
+      <button type="submit" class="btn btn-primary my-1">Submit</button>
+    </form>
+    <div id="ticket-total">
+      <p>Your ticket cost is $<span id="cost"></span>.</p>
+    </div>
+  </div>
+</body>
+</html>
